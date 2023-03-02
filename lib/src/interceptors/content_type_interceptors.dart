@@ -14,8 +14,7 @@ class ContentTypeInterceptor extends Interceptor {
       if (data is FormData) {
         contentType = "multipart/form-data";
       } else if (data is Map) {
-        // contentType = Headers.formUrlEncodedContentType;
-        contentType = Headers.jsonContentType;
+        contentType = Headers.formUrlEncodedContentType;
       } else if (data is String) {
         contentType = Headers.jsonContentType;
       } else if (data != null) {
